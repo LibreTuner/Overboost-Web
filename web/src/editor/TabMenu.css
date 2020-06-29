@@ -1,0 +1,41 @@
+.tab-bar {
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.tab-menu-action {
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    height: 1.7rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--tab-menu-item-bg-color);
+    min-width: 7rem;
+    position: relative;
+}
+
+.tab-menu-action-close {
+    z-index: 2;
+    padding-left: 4px;
+}
+
+.tab-menu-action.selected {
+    background: var(--tab-menu-selected-bg-color);
+    color: var(--selected-fg-color);
+}
+
+.tab-menu {
+    display: grid;
+    grid-template-rows: 1.7rem minmax(0, 1fr);
+}
+
+.tab-menu-select {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

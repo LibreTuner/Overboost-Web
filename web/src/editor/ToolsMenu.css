@@ -1,0 +1,11 @@
+.tools-menu {
+    background: var(--panel-bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.table-plot {
+    width: 100%;
+    height: 20rem;
+    align-self: flex-end;
+}

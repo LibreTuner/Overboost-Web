@@ -1,0 +1,12 @@
+.button {
+    background-color: var(--button-bg-color);
+    height: 1.4rem;
+    padding: 0 4px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: var(--button-bg-color-hover);
+}

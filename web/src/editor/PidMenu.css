@@ -1,0 +1,21 @@
+.pid-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.75rem;
+    margin: 5px 0;
+}
+
+.pid-item {
+    background-color: var(--menu-section-item-bg-color);
+    padding: 0 5px;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.pid-item:hover {
+    background-color: var(--selected-bg-color);
+}

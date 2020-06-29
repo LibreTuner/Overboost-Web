@@ -1,0 +1,37 @@
+.left-menu {
+    background: var(--panel-bg-color);
+}
+
+.left-menu-tabs {
+    width: 3rem;
+    height: 100%;
+    background: var(--left-menu-select-bg-color);
+    float: left;
+}
+
+.left-menu-tab-menu-action {
+    height: 3.5rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.left-menu-tab-menu-action svg {
+    fill: var(--inactive-fg-color);
+}
+
+.left-menu-tab-menu-action:hover svg {
+    fill: var(--selected-fg-color);
+}
+
+.left-menu-tab-menu-action.selected svg {
+    fill: var(--selected-fg-color);
+}
+
+.left-menu-container {
+    width: calc(100% - 3rem);
+    float: right;
+    height: 100%;
+}

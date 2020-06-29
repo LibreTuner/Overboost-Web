@@ -1,0 +1,64 @@
+.data-grid {
+    background: var(--panel-bg-color);
+    padding: 6px;
+    margin: 0 auto;
+}
+
+.data-grid-container {
+    background: var(--panel-bg-color);
+}
+
+.data-grid-cell {
+    color: #ffffff;
+    padding: 0 4px;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+    font-size: 0.84em;
+    display: flex;
+    align-items: center;
+}
+
+.data-grid-cell-input {
+    border: none;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+}
+
+.data-grid-cell-input:focus {
+    border: none;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+}
+
+.data-grid-header {
+    padding: 0 4px;
+    font-size: 0.84em;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+}
+
+.data-grid-spacer {
+    grid-column: 2 / 3
+}
+
+.data-grid-xaxis, .data-grid-yaxis {
+    line-height: 22px;
+    font-weight: 550;
+    display: block;
+    text-align: center;
+    height: 22px;
+    position: relative;
+    font-size: 0.84em;
+}
+
+.data-grid-xaxis {
+    margin-left: 92px;
+}
+
+.data-grid-yaxis {
+    height: calc(100% - 22px);
+    margin-top: 22px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}

@@ -1,0 +1,10 @@
+.datalog {
+    background: var(--panel-bg-color);
+    overflow: hidden;
+    padding: 8px;
+}
+
+.datalog-plot {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,112 @@
+.data-grid {
+    background: var(--panel-bg-color);
+    padding: 6px;
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.data-grid-container {
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+
+.data-grid-fixed {
+    position: fixed;
+}
+
+.data-grid-scroll {
+    overflow: auto;
+    position: absolute;
+    top: 2.6rem;
+    bottom: 0;
+    left: 5.4rem;
+    right: 0;
+}
+
+.data-grid-rows {
+    position: absolute;
+    top: 2.6rem;
+    left: calc(5.4rem);
+    right: 20px;
+    bottom: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    z-index: 1;
+}
+
+.data-grid-cell {
+    color: #ffffff;
+    padding: 0 4px;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+    font-size: 0.84em;
+    display: flex;
+    align-items: center;
+}
+
+.data-grid-cell-input {
+    border: none;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+}
+
+.data-grid-cell-input:focus {
+    border: none;
+    border-bottom: 1px solid var(--panel-bg-color);
+    border-right: 1px solid var(--panel-bg-color);
+}
+
+.data-grid-header {
+    width: 4rem;
+    padding: 0 4px;
+    font-size: 0.84em;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+}
+
+.data-grid-xaxis {
+    position: absolute;
+    left: calc(22px + 4rem);
+    overflow: hidden;
+    right: 20px;
+    top: 1.4rem;
+}
+
+.data-grid-yaxis {
+    position: absolute;
+    left: 22px;
+    top: 2.6rem;
+    bottom: 20px;
+    overflow: hidden;
+}
+
+.data-grid-xaxis-label, .data-grid-yaxis-label {
+    line-height: 1.4rem;
+    font-weight: 550;
+    display: block;
+    text-align: center;
+    height: 1.4rem;
+    font-size: 0.84em;
+}
+
+.data-grid-xaxis-label {
+    position: absolute;
+    left: calc(5.4rem);
+    right: 20px;
+}
+
+.data-grid-yaxis-label {
+    position: absolute;
+    height: calc(100% - 20px - 1.4rem);
+    top: 1.4rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}

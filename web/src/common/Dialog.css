@@ -1,0 +1,47 @@
+.dialog-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: #00000071;
+    z-index: 1;
+}
+
+.dialog {
+    margin: auto;
+    background: var(--dialog-bg-color);
+    font-size: 0.9em;
+    min-width: 30vw;
+}
+
+@media screen and (max-width: 1500px) {
+    .dialog {
+        min-width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dialog {
+        min-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dialog {
+        min-width: 100vw;
+    }
+}
+
+
+.dialog-header {
+    padding: 8px 16px;
+    background: var(--dialog-header-bg-color);
+    text-align: center;
+}
+
+.dialog-content {
+    padding: 16px;
+    padding-top: 4px;
+}

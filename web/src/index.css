@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  /* ---- Colors ---- */
+  --primary-bg-color: #303030;
+  --panel-bg-color: #3b3b3b;
+  --selected-bg-color: #585858;
+  --hover-bg-color: #575757;
+
+  /* Inputs */
+  --input-bg-color: #575757;
+  --input-border-color: #707070;
+  --input-border-focus-color: #4e5b7c;
+  --input-placeholder-color: #c0c0c0;
+
+  /* Buttons */
+  --button-bg-color: var(--input-bg-color);
+  --button-bg-color-hover: #636363;
+
+  /* NavBar */
+  --navbar-hover-bg-color: var(--primary-bg-color);
+  --navbar-hover-fg-color: #ffffff;
+
+  /* Dialog Menu */
+  --dialog-bg-color: var(--panel-bg-color);
+  --dialog-header-bg-color: #444444;
+
+  /* Menus */
+  --menu-section-header-bg-color: #747474;
+  --menu-section-item-bg-color: none;
+
+  --primary-shadow-color: #292929;
+  --secondary-fg-color: #dddddd;
+  --primary-fg-color: #a39726;
+  --selected-fg-color: #f3f3f3;
+  --inactive-fg-color: #a3a3a3;
+  --left-menu-select-bg-color: #444444;
+
+  /* Tab Menu */
+  --tab-menu-item-bg-color: #535353;
+  --tab-menu-selected-bg-color: var(--panel-bg-color);
+
+  /* ---- Dimensions ---- */
+  --navbar-height: 3rem;
+}
+
+body {
+  color: var(--secondary-fg-color);
+  background-color: var(--primary-bg-color);
+}
+
+input {
+  background-color: var(--input-bg-color);
+  padding: 2px;
+  border: 1px solid var(--input-border-color);
+  height: 1.4rem;
+  color: var(--secondary-fg-color);
+  transition: border-color 0.5s;
+}
+
+input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+input:focus {
+  border: 1px solid var(--input-border-focus-color);
+}
+
+select {
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--input-border-color);
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 1.4rem;
+}

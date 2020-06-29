@@ -1,0 +1,20 @@
+.select-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    height: 100%;
+    font-size: 1em;
+    top: 0px;
+    right: 10px;
+    position: absolute;
+}
+
+.select-wrapper select {
+    width: 100%;
+}
