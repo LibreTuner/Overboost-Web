@@ -1,0 +1,22 @@
+.file-select {
+    background-color: #cecece;
+    border-radius: 5px;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.file-select > span {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+.file-select > input {
+    width: 0;
+    height: 0;
+}

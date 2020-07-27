@@ -1,0 +1,8 @@
+Details:
+Table Description
+Axes (Make these a link?)
+Table Selection
+Units and conversions
+Data type
+Graph
+

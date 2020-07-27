@@ -18,7 +18,8 @@ code {
 
 :root {
   /* ---- Colors ---- */
-  --primary-bg-color: #303030;
+  /*--primary-bg-color: #303030;*/
+  --primary-bg-color: #eeeeee;
   --panel-bg-color: #3b3b3b;
   --selected-bg-color: #585858;
   --hover-bg-color: #575757;
@@ -46,7 +47,7 @@ code {
   --menu-section-item-bg-color: none;
 
   --primary-shadow-color: #292929;
-  --secondary-fg-color: #dddddd;
+  --secondary-fg-color: #272727; /*#dddddd;*/
   --primary-fg-color: #a39726;
   --selected-fg-color: #f3f3f3;
   --inactive-fg-color: #a3a3a3;

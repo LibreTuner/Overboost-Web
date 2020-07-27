@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    user-select: none;
 }
 
 .data-grid-container {
@@ -33,7 +34,7 @@
 .data-grid-rows {
     position: absolute;
     top: 2.6rem;
-    left: calc(5.4rem);
+    left: 5.4rem;
     right: 20px;
     bottom: 20px;
     overflow: scroll;
@@ -75,9 +76,10 @@
 .data-grid-xaxis {
     position: absolute;
     left: calc(22px + 4rem);
-    overflow: hidden;
     right: 20px;
     top: 1.4rem;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .data-grid-yaxis {
@@ -85,7 +87,8 @@
     left: 22px;
     top: 2.6rem;
     bottom: 20px;
-    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .data-grid-xaxis-label, .data-grid-yaxis-label {

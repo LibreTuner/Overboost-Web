@@ -1,0 +1,84 @@
+.dashboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 4px;
+}
+
+.dashboard-sep {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+
+.projects {
+    padding: 20px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.projects thead {
+    text-align: left;
+}
+
+.projects thead th:nth-child(1) {
+    width: 30%;
+}
+
+.projects thead th:nth-child(2) {
+    width: 30%;
+}
+
+.projects thead th:nth-child(3) {
+    width: 40%;
+    text-align: right;
+}
+
+.projects td {
+    border: none;
+}
+
+.projects tr td:nth-child(3) {
+    text-align: right;
+}
+
+.project-row {
+    cursor: pointer;
+}
+
+.project-row:hover {
+    background-color: #dfdfdf;
+}
+
+.upload-progress {
+    height: 32px;
+    position: relative;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(71, 71, 71);
+}
+
+.upload-progress-border {
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.upload-progress-bar {
+    background-color: rgb(71, 143, 71);
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    transition-property: width;
+    transition: 0.2s;
+}

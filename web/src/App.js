@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './common/NavBar';
 import Editor from './editor/Editor';
 import Download from './app/Download';
+import Dashboard from './dashboard/Dashboard';
 
 class App extends React.Component {
   state = {
@@ -15,7 +16,9 @@ class App extends React.Component {
   render() {
     const { downloadOpen } = this.state;
 
-    return (
+    return <Dashboard />
+
+    /*return (
       <div>
         <header>
           <NavBar onDownload={this.handleDownload}/>
@@ -23,7 +26,7 @@ class App extends React.Component {
         <Editor />
         {downloadOpen ? <Download /> : <></>}
       </div>
-    );
+    );*/
   }
 }
 
